@@ -13,8 +13,8 @@ import { UsersComponent } from './users/users.component';
   ],
   imports: [
     BrowserModule,
-    StoreNgModule,
-    FormsModule
+    FormsModule,
+    StoreNgModule
   ],
   providers: [],
   bootstrap: [AppComponent]
