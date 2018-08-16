@@ -1,12 +1,12 @@
 export interface IUsername {
   key: string;
-  intialState: string;
+  initialState: string;
 }
 
 
 export interface IUsers {
   key: string;
-  intialState: string[];
+  initialState: string[];
 }
 
 export interface AppState {

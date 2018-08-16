@@ -5,7 +5,7 @@ import { UPDATE_USERNAME } from '../actions';
 
 const username: IUsername = {
   key: 'username',
-  intialState: ''
+  initialState: ''
 };
 
 

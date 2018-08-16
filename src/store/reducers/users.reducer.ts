@@ -6,7 +6,7 @@ import { ADD_USER } from '../actions';
 
 export const users: IUsers = {
   key: 'users',
-  intialState: []
+  initialState: []
 };
 
 
