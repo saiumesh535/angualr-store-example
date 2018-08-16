@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <div class="adduser">
+    <h1>Add some usernames</h1>
+    <div class="adder">
+      <input type="text" [(ngModel)]="username" (ngModelChange)="onUsernameUpdate(username)">
+      <button (click)="addUsername(username)">Add username</button>
+    </div>
+    <app-users></app-users>
+  </div>
+</div>
