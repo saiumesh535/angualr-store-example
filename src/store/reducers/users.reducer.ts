@@ -14,7 +14,7 @@ export const usersInitialData: IReducer<UsersData[]> = {
 };
 
 
-@Reducer(usersInitialData)
+@Reducer<UsersData[]>(usersInitialData)
 export class UsersReducer {
   constructor() { }
 

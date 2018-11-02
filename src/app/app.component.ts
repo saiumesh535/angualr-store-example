@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Store } from 'angular-store';
 import { updateUsername, addUser } from '../store/actions';
+import { AppState } from 'src/store/types';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class AppComponent {
   title = 'angularstoreperf';
   constructor(private store: Store) {
     /* getting  state from store */
-    console.log('store', this.store.getSnapShot());
+    console.log('store', this.store.getSnapShot<AppState>());
   }
 
   /* updating username in store */

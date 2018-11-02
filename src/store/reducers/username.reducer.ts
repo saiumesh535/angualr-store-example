@@ -1,21 +1,22 @@
-import { Reducer, Action, IState } from 'angular-store';
-import { IUsername } from '../types';
+import { Reducer, Action, IState, IReducer } from 'angular-store';
+import { IUsername, AppState } from '../types';
 import { UPDATE_USERNAME } from '../actions';
 
 
-const username: IUsername = {
+const username: IReducer<string> = {
   key: 'username',
   initialState: ''
 };
 
 
-@Reducer(username)
+@Reducer<string>(username)
 export class UsernameReducer {
   constructor() { }
 
   @Action(UPDATE_USERNAME)
-  public updateUsername(payload: string, state: IState) {
-    state.updateState({ key: username.key, payload });
+  public updateUsername(payload: string, { getState, updateState }: IState) {
+    const state = getState<AppState>();
+    updateState({ key: username.key, payload });
   }
 
 }
