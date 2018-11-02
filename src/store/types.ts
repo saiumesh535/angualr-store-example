@@ -1,3 +1,5 @@
+import { UsersData } from './reducers';
+
 export interface IUsername {
   key: string;
   initialState: string;
@@ -11,5 +13,5 @@ export interface IUsers {
 
 export interface AppState {
   username: string;
-  users: string[];
+  users: UsersData[];
 }

@@ -1,3 +1,4 @@
-<div class="user" *ngFor="let user of (users | async); let i = index" >
-  <p>{{i + 1}}. {{user}}</p>
+<div class="users" *ngFor="let user of (users | async); let i = index" >
+  <p>{{i + 1}}. {{user.username}}</p>
+  <p>@{{user.timeStamp}}</p>
 </div>
